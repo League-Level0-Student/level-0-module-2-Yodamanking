@@ -5,6 +5,7 @@ package _01_random._4_validation;
 
 import java.util.Random;
 
+
 import javax.swing.JOptionPane;
 
 public class Validation {
@@ -13,12 +14,26 @@ public class Validation {
 		Random randomMaker = new Random();
 		for (int i = 0; i < 5; i++) {
 			int randomNumber = randomMaker.nextInt(5);
-			if(randomNumber == 0)
+			if(randomNumber == 0) {
+				System.out.println("You are cool.");
+			}
+			else if(randomNumber == 1) {
+				System.out.println("You are nice.");
+			}
+			else if(randomNumber == 2) {
+				System.out.println("You are smart.");
+			}
+			else if(randomNumber == 3) {
+				System.out.println("Your hat looks good.");
+			}
+			else if(randomNumber == 4) {
+				System.out.println("You are fine.");
+			}
 		}
 		
 		
 		
-		System.out.println(randomNumber);
+		System.out.println("Hello");
 
 		// 1. Use each value of randomNumber to give the user a random compliment.
 		

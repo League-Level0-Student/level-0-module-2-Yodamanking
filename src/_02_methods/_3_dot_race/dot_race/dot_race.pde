@@ -4,7 +4,7 @@ int x;
 
 void setup() {
     size(800, 200);
-    
+    x = 50;
     //1. Set the variable named x to 50.
 }
 
@@ -14,9 +14,15 @@ void draw() {
  
     //2. Draw an ellipse of height and width 50. Make sure to use the x variable for its X position. 
     //   Pick a y value that places it half way down the window.
-      
+    fill(200, 12, 12);
+      ellipse(x, 100, 50, 50);
     //3. Make the ellipse a nice color
-
+    if(mousePressed){
+      x +=10;
+    }
+    if(x >= 800){
+      println("You won!");
+    }
     //4. If the mouse is pressed change the x value so that the dot moves to the right
 
     //5. If your dot moves slowly, make it move faster. If it moves too quickly, slow it down
@@ -38,5 +44,4 @@ void playSound() {
         sound.trigger();
         soundPlayed = true;
     }
-}
-*/
+}*/
